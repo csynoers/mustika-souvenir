@@ -32,6 +32,9 @@ elseif($_GET['mod']=='gallery') {
 elseif($_GET['mod']=='contact') {
 	include "joinc/contents/contact.php";
 }
+elseif($_GET['mod']=='pages') {
+	include "joinc/contents/pages/index.php";
+}
 else{
 	
 }

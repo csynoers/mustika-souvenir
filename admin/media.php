@@ -134,7 +134,7 @@ include_once 'config.php';
               <li><a href="media.php?module=messages"><i class="fa fa-circle-o"></i> Pesan Masuk</a></li>
             </ul>
           </li>
-          <li class="treeview <?php if ($_GET['module']=='slide' || $_GET['id']=='5' || $_GET['id']=='6' || $_GET['id']=='7'){ echo 'active menu-open';}?>">
+          <li class="treeview <?php if ($_GET['module']=='slide' || $_GET['id']=='5' || $_GET['id']=='6' || $_GET['id']=='7' || $_GET['id']=='8'){ echo 'active menu-open';}?>">
             <a href="#">
               <i class="fa fa-globe"></i> <span>Pages</span>
               <span class="pull-right-container">
@@ -143,6 +143,9 @@ include_once 'config.php';
             </a>
             <ul class="treeview-menu">
               <li><a href="media.php?module=pages&id=5"><i class="fa fa-circle-o"></i> About</a></li>
+              <li><a href="media.php?module=pages&id=6"><i class="fa fa-circle-o"></i> Keunggulan</a></li>
+              <li><a href="media.php?module=pages&id=7"><i class="fa fa-circle-o"></i> Cara Pemesanan</a></li>
+              <li><a href="media.php?module=pages&id=8"><i class="fa fa-circle-o"></i> Hubungi Kami</a></li>
               <li><a href="media.php?module=slide"><i class="fa fa-circle-o"></i> Slide / Banner</a></li>
             </ul>
           </li>

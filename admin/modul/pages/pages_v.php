@@ -1,7 +1,7 @@
 
 <?php
   $modul = $database->select($fields="*", $table="modul", $where_clause="WHERE id_modul = $_GET[id]", $fetch="");
-  if ($_GET[id] == '6' || $_GET[id] == '5' || $_GET[id] == '7') {?>
+  if ($_GET[id] == '6' || $_GET[id] == '5' || $_GET[id] == '7' || $_GET[id] == '8') {?>
     
 
 <script type="text/javascript" src="../jolib/tinymce/tinymce.min.js"></script>
@@ -53,7 +53,7 @@
                   <textarea name="description" id="description" class="form-control" placeholder="Enter Description" rows="10"><?php echo $modul['static_content'];?></textarea> 
                 </div>
               </div>
-              <?php if ( $_GET[id] == '4' || $_GET[id] == '7') {?>
+              <?php if ( $_GET[id] == '4' ) {?>
                <div class="col-sm-12">
                 <div class="row">
                   <div class="col-sm-6">

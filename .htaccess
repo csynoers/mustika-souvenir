@@ -35,5 +35,9 @@ RewriteRule ^berita-(.*)-(.[0-9]*)$ media.php?mod=news-detail&seo=$1&id=$2 [L]
 RewriteRule ^galeri-souvenir-jogja$ media.php?mod=gallery [L]
 RewriteRule ^load_gallery$ joinc/contents/gallery/load_data.php [L]
 
+RewriteRule ^keunggulan$ media.php?mod=pages&id=6 [L]
+RewriteRule ^cara-pemesanan$ media.php?mod=pages&id=7 [L]
+RewriteRule ^hubungi-kami$ media.php?mod=pages&id=8 [L]
+
 RewriteRule ^dealer-honda-jogja$ media.php?mod=contact [L]
 
