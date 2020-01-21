@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+  background:#f1f1f1;
+}
+.content-center{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.content-center.responsive {
+  width: 50%; 
+  height: 50%;
+  max-width: 350px;
+  padding: 0 15px;
+}
+@media (max-width: 767px){
+  .content-center.responsive {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+  }
+}
+.form-signin {
+    padding: 20px 25px 25px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      
+  font-family:Tahoma, Geneva, sans-serif;
+  color:#990000;
+  font-weight:lighter;
+}
+
+.form-signin .form-signin-heading{
+    color:#00A2D1;
+}
+
+.navbar-brand{
+  font-family:"Lucida Handwriting";
+}
+#btn-submit{
+  height:45px;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.left-addon .glyphicon  { left:  0px;color: #ccc;}
+.right-addon .glyphicon { right: 0px;color: #ccc;}
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.logo-login{
+    text-align: center;
+    width: auto;
+    padding: 10px 0;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400; 
+    font-style: italic;
+    color: red;
+}

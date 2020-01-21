@@ -1,0 +1,39 @@
+RewriteEngine On
+
+<Ifmodule mod_rewrite.c>
+	Options All -Indexes
+</Ifmodule>
+
+<IfModule mod_deflate.c>
+	<FilesMatch "\\.(js|css|html|xml|png|jpg|gif)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
+#---- Begin Site Map ---#
+	RewriteRule (.*)\.xml(.*) $1.php$2 [nocase]
+#---- End Site Map ----#
+#ErrorDocument 404 /notfound.html 
+
+
+RewriteRule ^$ media.php?mod=home [L]
+RewriteRule ^load_souvenir_home$ joinc/contents/home/load_data.php [L]
+
+RewriteRule ^tentang-kami$ media.php?mod=about [L]
+
+RewriteRule ^cari-souvenir-di-jogja$ media.php?mod=search [L]
+RewriteRule ^send_messages_search$ joinc/contents/search/messages_act.php [L]
+
+RewriteRule ^souvenir$ media.php?mod=souvenir [L]
+RewriteRule ^load_souvenir$ joinc/contents/souvenir/load_data.php [L]
+RewriteRule ^souvenir-(.*)-(.*)-(.[0-9]*)$ media.php?mod=souvenir-detail&cat=$1&seo=$2&id=$3 [L]
+RewriteRule ^send_messages_detail$ joinc/contents/souvenir/messages_act.php [L]
+
+RewriteRule ^berita-souvenir$ media.php?mod=news&id=$1&seo=$2 [L]
+RewriteRule ^load_news$ joinc/contents/news/load_data.php [L]
+RewriteRule ^berita-(.*)-(.[0-9]*)$ media.php?mod=news-detail&seo=$1&id=$2 [L]
+
+RewriteRule ^galeri-souvenir-jogja$ media.php?mod=gallery [L]
+RewriteRule ^load_gallery$ joinc/contents/gallery/load_data.php [L]
+
+RewriteRule ^dealer-honda-jogja$ media.php?mod=contact [L]
+
